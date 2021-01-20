@@ -1,0 +1,36 @@
+{
+  "name": "zce",
+  "version": "0.1.0",
+  "description": "Awesome node module",
+  "keywords": [
+    "zce",
+    "zce"
+  ],
+  "homepage": "https://github.com/zce/zce#readme",
+  "bugs": {
+    "url": "https://github.com/zce/zce/issues"
+  },
+  "license": "MIT",
+  "author": "yangxin <364332625@qq.com>",
+  "files": [
+    "lib"
+  ],
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zce/zce.git"
+  },
+  "scripts": {
+    "lint": "standard --fix"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "standard": "^14.3.4"
+  },
+  "engines": {
+    "node": ">=8"
+  }
+}
