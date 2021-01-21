@@ -1,14 +1,14 @@
 {
   "name": "jier-pages",
-  "version": "0.1.0",
+  "version": "0.3.0",
   "description": "Awesome node module",
   "keywords": [
     "jier-pages",
     "jier"
   ],
-  "homepage": "https://github.com/zce/zce#readme",
+  "homepage": "https://github.com/yangxin9527/gulp-pages",
   "bugs": {
-    "url": "https://github.com/zce/zce/issues"
+    "url": "https://github.com/yangxin9527/gulp-pages/issues"
   },
   "license": "MIT",
   "author": "yangxin <364332625@qq.com>",
@@ -17,13 +17,13 @@
     "bin"
   ],
   "main": "lib/index.js",
-  "bin":"bin/jier-pages.js",
+  "bin": "bin/jier-pages.js",
   "directories": {
     "lib": "lib"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zce/zce.git"
+    "url": "https://github.com/yangxin9527/gulp-pages"
   },
   "scripts": {
     "lint": "standard --fix",

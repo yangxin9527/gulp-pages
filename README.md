@@ -1,51 +1,57 @@
-# zce
+# jier-pages
 
-[![NPM Downloads][downloads-image]][downloads-url]
-[![NPM Version][version-image]][version-url]
-[![License][license-image]][license-url]
-[![Dependency Status][dependency-image]][dependency-url]
-[![devDependency Status][devdependency-image]][devdependency-url]
-[![Code Style][style-image]][style-url]
 
 > Awesome node module
 
 ## Installation
 
 ```shell
-$ npm install zce
+$ npm install jier-pages
 
 # or yarn
-$ yarn add zce
+$ yarn add jier-pages
 ```
 
-## Usage
+## strat API
 
-<!-- TODO: Introduction of API use -->
 
-```javascript
-const zce = require('zce')
-const result = zce('zce')
-// result => 'zce@zce.me'
+```shell
+$ jier-pages develop //启动项目
+$ 
+$ jier-pages build //打包压缩
+$ 
+$ jier-pages clean //清除无用文件
 ```
-
-## API
-
-<!-- TODO: Introduction of API -->
-
-### zce(name[, options])
-
-#### name
-
-- Type: `string`
-- Details: name string
-
 #### options
 
-##### host
+可通过在项目根目录创建pages.config.json 
 
-- Type: `string`
-- Details: host string
-- Default: `'zce.me'`
+```javascript
+// pages.config.json 
+module.exports={
+    build:{ //自定义目录结构 
+        'src':'src',
+        'dist':'dist',
+        'temp':'.temp',
+        'public':'public',
+        paths:{
+          'styles':'assets/**/*.scss',
+          'scripts':'assets/**/*.js',
+          'pages':'*.html',
+          'images':'assets/images/**',
+          'fonts':'assets/fonts/**',
+        }
+      },
+    data:{// 可根据需要传递项目信息
+        // menus:[],
+        // pkg:require('./package.json'),
+        // date:new Date()
+    }
+   
+}
+
+
+```
 
 ## Contributing
 
@@ -62,17 +68,3 @@ const result = zce('zce')
 
 [MIT](LICENSE) &copy; yangxin <364332625@qq.com>
 
-
-
-[downloads-image]: https://img.shields.io/npm/dm/zce.svg
-[downloads-url]: https://npmjs.org/package/zce
-[version-image]: https://img.shields.io/npm/v/zce.svg
-[version-url]: https://npmjs.org/package/zce
-[license-image]: https://img.shields.io/github/license/zce/zce.svg
-[license-url]: https://github.com/zce/zce/blob/master/LICENSE
-[dependency-image]: https://img.shields.io/david/zce/zce.svg
-[dependency-url]: https://david-dm.org/zce/zce
-[devdependency-image]: https://img.shields.io/david/dev/zce/zce.svg
-[devdependency-url]: https://david-dm.org/zce/zce?type=dev
-[style-image]: https://img.shields.io/badge/code_style-standard-brightgreen.svg
-[style-url]: https://standardjs.com
