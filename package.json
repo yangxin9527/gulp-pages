@@ -1,10 +1,10 @@
 {
-  "name": "zce",
+  "name": "jier-pages",
   "version": "0.1.0",
   "description": "Awesome node module",
   "keywords": [
-    "zce",
-    "zce"
+    "jier-pages",
+    "jier"
   ],
   "homepage": "https://github.com/zce/zce#readme",
   "bugs": {
@@ -13,9 +13,11 @@
   "license": "MIT",
   "author": "yangxin <364332625@qq.com>",
   "files": [
-    "lib"
+    "lib",
+    "bin"
   ],
   "main": "lib/index.js",
+  "bin":"bin/jier-pages.js",
   "directories": {
     "lib": "lib"
   },
@@ -24,9 +26,27 @@
     "url": "git+https://github.com/zce/zce.git"
   },
   "scripts": {
-    "lint": "standard --fix"
+    "lint": "standard --fix",
+    "gulp": "gulp"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "browser-sync": "^2.26.13",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-cache": "^1.1.3",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-if": "^3.0.0",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-load-plugins": "^2.0.6",
+    "gulp-sass": "^4.1.0",
+    "gulp-swig": "^0.9.1",
+    "gulp-uglify": "^3.0.2",
+    "gulp-useref": "^5.0.0"
+  },
   "devDependencies": {
     "standard": "^14.3.4"
   },
